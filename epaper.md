@@ -12,6 +12,4 @@ doc: https://www.waveshare.com/wiki/7.5inch_HD_e-Paper_HAT_(B)
 * 
 
 ## Current status
-~~I'm working in PullAndPaint-01.  Things clear, I'm working on getting rid of the crazy boot sequence. The json comes from the npm start of policy-resources (art01.yaml).  But it's not actually writing to the screen.~~
-
-I'm working in PullAndPaint-bitmap at https://github.com/sweeneyb/png-to-epaper/.  I have it pulling 2x pngs and decoding them.  I think there's an allocation in the display that's blowing out memory.  I can paint one thing, but not 2x.  
+go and arduino code work. Needs a case to test power/battery longevity.
