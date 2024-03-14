@@ -6,5 +6,6 @@ Attention is all you need [https://proceedings.neurips.cc/paper_files/paper/2017
 YouTube single piece flow (animation)
 https://www.getflowtrained.com/
 
+https://how.complexsystems.fail/
 # web APIs
 https://hasura.io/docs/latest/getting-started/docker-simple/ - Integrate Auth0 and postgres to serve sold courses via an API

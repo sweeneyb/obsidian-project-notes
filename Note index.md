@@ -4,7 +4,8 @@ An App for tagging art as loved or not for you.  Possibly an input into a rec en
 
 
 # Continuing Ed
-[[Reading list]]
+[[readme]]
+
 ### Prefect: python workflows (modern workflow orchestration)
 https://github.com/PrefectHQ/prefect
 https://docs.prefect.io/2.13.5/getting-started/quickstart/#__tabbed_1_2
