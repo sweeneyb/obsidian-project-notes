@@ -21,3 +21,6 @@ https://fly.io/blog/gossip-glomers/
 4. Choose the plugin corresponding to https://github.com/denolehov/obsidian-git
 5. Download, enable, reload
 6. ctrl-p/cmd-p to bring up the command palette.  Select "Git: open source control view"
+
+# QRT-notes
+https://vercel.com/sweeneybs-projects/qrt-notes
