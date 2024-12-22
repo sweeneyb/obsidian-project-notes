@@ -176,13 +176,14 @@ users:
     passwd: "$1$sC8RMknt$ryy.SalurqDuCLPu1H1Gx."
     sudo: ALL=(ALL) NOPASSWD:ALL
 EOF
+
 genisoimage -output cidata.iso -V cidata -r -J user-data meta-data
 qemu-img create -b $VM_IMAGE -f qcow2 -F qcow2 root.img 10G
 virt-install --name=$VM_NAME --ram=2048 --vcpus=1 --autostart --import --disk path=root.img,format=qcow2 --disk path=cidata.iso,device=cdrom --os-variant=ubuntu-lts-latest --network bridge=br0,model=virtio --graphics none --console pty,target_type=serial
 ```
 
 virsh undefine
-virsh delete
+virsh destroy
 
 to see what's attached
 ```
