@@ -1,3 +1,6 @@
+Hardware: https://aoostar.com/products/aoostar-r7-2-bay-40t-nas-storage-amd-ryzen-7-5825u-mini-pc8c-16t-up-to-4-5ghz-with-w11-pro-ddr4-ram-2-m-2-nvme-%E5%A4%8D%E5%88%B6?variant=49012947910954
+
+Software
 - Download debian netinst media (https://www.debian.org/CD/netinst/)
 - Install with expert graphical.  Most of the defaults are fine, except partitioning.  I used the partial disk LVM layout to partition 200 GB and separate /home, /var, /tmp, and /
 
@@ -92,7 +95,6 @@ zfs create -p -o refquota=10GB  -o mountpoint=/data/vms/homeassistant tank/data/
 zfs create -o mountpoint=/data tank/data
 
 
-
 zfs set mountpoint=/data/vms/docker tank/data/vms/docker
 zfs set mountpoint=/data/vms/homeassistant tank/data/vms/homeassistant
 zfs set mountpoint=/data/vms tank/data/vms
@@ -103,6 +105,12 @@ zfs destroy tank/data/vms/homeassistant
 zfs destroy tank/data/vms
 
 tank/data/vms/homeassistant
+
+### expand zfs refquota
+sudo zfs set refquota=30G tank/data/vms/pulsar-010
+sudo zfs set refquota=30G tank/data/vms/pulsar-020
+sudo zfs set refquota=30G tank/data/vms/pulsar-030
+
 
 ```
 export VM_NAME=homedir

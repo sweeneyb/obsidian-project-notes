@@ -25,6 +25,10 @@ Golang framework for distributed events
 https://docs.temporal.io/workflows#workflow-definition
 https://docs.temporal.io/self-hosted-guide/upgrade-server
 
+http://192.168.3.114:8233/namespaces/default/workflows/money-transfer-workflow/677c4b3c-2737-4886-af6d-8db01e3b6706/history
+
+https://github.com/temporalio/temporal-pendulum/tree/main/web - multi-language example.  Each example gets its own queue
+
 ### Vector
 Datadog observability pipelines
 https://vector.dev/docs/setup/quickstart/
